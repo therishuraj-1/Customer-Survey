@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Customer Survey</title>
+ 
+</head>
+<body>
+  <div class="container" id="welcome-screen">
+    <h2>Welcome to Our Customer Survey</h2>
+    <p style="text-align:center;">We appreciate your feedback. Click below to start the survey.</p>
+    <button onclick="startSurvey()">Start Survey</button>
+  </div>  <div class="container hidden" id="survey-form">
+    <h2>Customer Survey</h2>
+    <form id="survey">
+      <div class="question">
+        <p>1. How satisfied are you with our products?</p>
+        <label><input type="radio" name="q1" value="1">1</label>
+        <label><input type="radio" name="q1" value="2">2</label>
+        <label><input type="radio" name="q1" value="3">3</label>
+        <label><input type="radio" name="q1" value="4">4</label>
+        <label><input type="radio" name="q1" value="5">5</label>
+      </div><div class="question">
+    <p>2. How fair are the prices compared to similar retailers?</p>
+    <label><input type="radio" name="q2" value="1">1</label>
+    <label><input type="radio" name="q2" value="2">2</label>
+    <label><input type="radio" name="q2" value="3">3</label>
+    <label><input type="radio" name="q2" value="4">4</label>
+    <label><input type="radio" name="q2" value="5">5</label>
+  </div>
+
+  <div class="question">
+    <p>3. How satisfied are you with the value for money of your purchase?</p>
+    <label><input type="radio" name="q3" value="1">1</label>
+    <label><input type="radio" name="q3" value="2">2</label>
+    <label><input type="radio" name="q3" value="3">3</label>
+    <label><input type="radio" name="q3" value="4">4</label>
+    <label><input type="radio" name="q3" value="5">5</label>
+  </div>
+
+  <div class="question">
+    <p>4. On a scale of 1-10 how would you recommend us to your friends and family?</p>
+    <label><input type="radio" name="q4" value="1">1</label>
+    <label><input type="radio" name="q4" value="2">2</label>
+    <label><input type="radio" name="q4" value="3">3</label>
+    <label><input type="radio" name="q4" value="4">4</label>
+    <label><input type="radio" name="q4" value="5">5</label>
+    <label><input type="radio" name="q4" value="6">6</label>
+    <label><input type="radio" name="q4" value="7">7</label>
+    <label><input type="radio" name="q4" value="8">8</label>
+    <label><input type="radio" name="q4" value="9">9</label>
+    <label><input type="radio" name="q4" value="10">10</label>
+  </div>
+
+  <div class="question">
+    <p>5. What could we do to improve our service?</p>
+    <textarea name="q5"></textarea>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+  </div>  <div class="container hidden" id="thank-you">
+    <h2>Thank You!</h2>
+    <p style="text-align:center;">Your feedback has been recorded.</p>
+  </div> 
+  <script src="script.js" ></script>
+</body>
+</html>
